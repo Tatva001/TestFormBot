@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormBot.Main", "FormBot.Main\FormBot.Main.csproj", "{07E4E9FA-7D2F-4344-8FB9-AD7699A17E14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormBot.Helper", "FormBot.Helper\FormBot.Helper.csproj", "{6D0EB98A-5D92-4EE6-A41A-EDA26964721E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormBot.Service", "FormBot.Service\FormBot.Service.csproj", "{E2C958F4-C7FB-4F56-ADA1-22E0ADF079F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormBot.Repository", "FormBot.Repository\FormBot.Repository.csproj", "{DD2D9D85-E3D9-4478-82EB-C6CF0A425A20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07E4E9FA-7D2F-4344-8FB9-AD7699A17E14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07E4E9FA-7D2F-4344-8FB9-AD7699A17E14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07E4E9FA-7D2F-4344-8FB9-AD7699A17E14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07E4E9FA-7D2F-4344-8FB9-AD7699A17E14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D0EB98A-5D92-4EE6-A41A-EDA26964721E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D0EB98A-5D92-4EE6-A41A-EDA26964721E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D0EB98A-5D92-4EE6-A41A-EDA26964721E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D0EB98A-5D92-4EE6-A41A-EDA26964721E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2C958F4-C7FB-4F56-ADA1-22E0ADF079F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2C958F4-C7FB-4F56-ADA1-22E0ADF079F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2C958F4-C7FB-4F56-ADA1-22E0ADF079F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2C958F4-C7FB-4F56-ADA1-22E0ADF079F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD2D9D85-E3D9-4478-82EB-C6CF0A425A20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD2D9D85-E3D9-4478-82EB-C6CF0A425A20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD2D9D85-E3D9-4478-82EB-C6CF0A425A20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD2D9D85-E3D9-4478-82EB-C6CF0A425A20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
