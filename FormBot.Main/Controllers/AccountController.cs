@@ -17,7 +17,7 @@ namespace FormBot.Main.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
-        //test comt 123 12 sd rtrtrt
+        
         public AccountController()
         {
         }
