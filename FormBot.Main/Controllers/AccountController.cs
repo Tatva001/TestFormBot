@@ -27,7 +27,7 @@ namespace FormBot.Main.Controllers
             UserManager = userManager;
             SignInManager = signInManager;
         }
-
+        //test
         public ApplicationSignInManager SignInManager
         {
             get
