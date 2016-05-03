@@ -58,7 +58,7 @@ namespace FormBot.Main.Controllers
         {
             get
             {
-                return HttpContext.GetOwinContext().Authentication;
+                return HttpContext.GetOwinContext().Authentication;   
             }
         }
 

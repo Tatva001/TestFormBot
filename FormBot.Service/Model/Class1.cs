@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 namespace FormBot.Service.Model
 {
     class Class1
-    {
+    { 
     }
 }
