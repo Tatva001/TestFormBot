@@ -72,5 +72,23 @@ $(document).ready(function () {
 	});  
 
 	$('.dropdown-toggle').dropdown()
-});
 
+
+
+	//fast click for touch devices  
+	FastClick.attach(document.body);
+
+	// footer adj
+	function footerAdj(){
+		var $px = $("#footer").innerHeight();
+		$("#content").css({"padding-bottom":$px});
+		$("#footer").css({"margin-top":-$px});		
+	}
+
+	footerAdj();
+	$(window).resize(function() {
+		setTimeout(function(){
+			footerAdj();
+		}, 300);
+	});
+});
