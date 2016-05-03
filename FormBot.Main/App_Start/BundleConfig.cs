@@ -20,12 +20,20 @@ namespace FormBot.Main
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/jquery.js",
+                      "~/Scripts/jquery.min.js",
+                      "~/Scripts/bootstrap.min.js",
+                      "~/Scripts/bootstrap-datepicker.js",
+                      "~/Scripts/modernizr.js",
+                      "~/Scripts/respond.min.js",
+                      "~/Scripts/fastclick.min.js",
+                      "~/Scripts/general.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/reset.css",
+                      "~/Content/bootstrap.min.css",
+                      "~/Content/datepicker.css",
+                      "~/Content/style.css"));
         }
     }
 }

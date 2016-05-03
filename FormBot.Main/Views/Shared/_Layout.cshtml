@@ -1,43 +1,128 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>FormBot</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    @*<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>*@
     @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    <div class="wrapper">
+        <!-- Start Header -->
+        <header id="header">
+            <!-- header start -->
+            <div class="hd-top">
+                <div class="container-fluid">
+                    <div class="logo col-sm-6">
+                        <a href="#" title="Formbot">
+                            <img src="images/logo.png" alt="Formbot" />
+                        </a>
+                    </div>
+                    <div class="userlinks col-sm-6">
+                        <div class="dropdown pull-right">
+                            <a class="dropdown-toggle username" href="#" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                John Marshalldffn
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li>
+                                    <a href="#" title="Profile">
+                                        <i><img src="images/profile-icon.png" alt=""></i>Profile
+                                    </a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#" title="Logout"><i><img src="images/logout.png" alt=""></i>Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+            <nav id="navigation">
+                <!--<a class="toggleMenu" href="#"><img src="images/menu-icon.png" alt=""></a>-->
+                <a class="menu-toggle" href="#">
+                    <i class="menu-icon">
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                        <span class="line3"></span>
+                    </i>
+                </a>
+                <ul class="menu">
+                    <li>
+                        <a class="navlink active" href="#" title="Home">
+                            <i class="icon"><img src="images/home-icon.png" alt="Home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navlink" href="#" title="Create New">
+                            <i class="icon"><img src="images/create-icon.png" alt="Create New"></i>
+                            Create New
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navlink" href="#" title="Manage">
+                            <i class="icon"><img src="images/manage-icon.png" alt="Manage"></i>
+                            Manage
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navlink" href="#" title="STC Trade">
+                            <i class="icon"><img src="images/trade-icon.png" alt="STC Trade"></i>
+                            STC Trade
+                        </a>
+                        <ul>
+                            <li><a href="#" title="">Lorem ipsum</a></li>
+                            <li><a href="#" title="">Lorem ipsum</a></li>
+                            <li><a href="#" title="">Lorem ipsum</a></li>
+                            <li><a href="#" title="">Lorem ipsum</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="navlink" href="#" title="My Compliance">
+                            <i class="icon"><img src="images/compliance-icon.png" alt="My Compliance"></i>
+                            My Compliance
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navlink" href="#" title="Notification">
+                            <i class="icon"><img src="images/notification-icon.png" alt="Notification"></i>
+                            Notification
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navlink" href="#" title="Email">
+                            <i class="icon"><img src="images/email-icon.png" alt="Email"></i>Email
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navlink" href="#" title="Reports">
+                            <i class="icon"><img src="images/reports-icon.png" alt="Reports"></i>
+                            Reports
+                        </a>
+                    </li>
                 </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
+
+            </nav>
+
+            <!-- header End -->
+        </header>
+        <!-- End Header -->
+        <!-- Start Content -->
+        <div class="container">
+
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
-
-    @Scripts.Render("~/bundles/jquery")
+    <!-- End Content -->
+    @RenderBody()
+    <footer id="footer">
+        <div class="content-wrapper">
+            <p class="copyright">Copyright &copy; 2016 Emerging Energy</p>
+        </div>
+    </footer>
+    @*@Scripts.Render("~/bundles/jquery")*@
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
