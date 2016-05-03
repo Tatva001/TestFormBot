@@ -1,0 +1,35 @@
+﻿@using FormBot.Main.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+<div id="login">
+    <div class="panel login-panel">
+     <div class="col-md-5 col-sm-5 loginleft">
+      <div class="panel-heading">
+       <div class="logo"><a href="#"><img src="~/Images/login_logo.png" alt=""></a></div>
+     </div>
+   </div>   
+   <div class="col-md-7 col-sm-7 loginright">
+    <form role="form" class="loginform">
+     <h1 class="title">Please Login</h1>
+     <div class="form-group">
+      <input type="text" class="form-control " placeholder="Username">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control " placeholder="Password">
+    </div>
+    <div class="form-group">
+      <input type="checkbox" value="" name=""><span class="remember">Remember me</span> 
+      <a class="link_password" href="#">Forgot Pasword?</a>
+    </div>
+    <div class="form-group">
+     <input type="button" value="Login" class="login-btn primary">
+   </div>
+
+ </form>
+</div>
+</div>
+
+</div>
