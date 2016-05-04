@@ -81,7 +81,6 @@ $(document).ready(function () {
 	// footer adj
 	function footerAdj(){
 	    var $px = $("#footer").innerHeight();
-	    alert($px);
 		$("#content").css({"padding-bottom":$px});
 		$("#footer").css({"margin-top":-$px});		
 	}
